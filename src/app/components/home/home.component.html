@@ -1,0 +1,12 @@
+<div class="body">
+  <div class="title-name">
+    Test technique WEB-ATRIO réalisé par {{ firstName }} {{ lastName }}
+  </div>
+  <div class="title-date">réalisé le {{ date }}</div>
+
+  <app-progress-bar [data]="installTestTechnique$ | async"></app-progress-bar>
+  <app-progress-bar [data]="developPhase$ | async"></app-progress-bar>
+  <button (click)="miseZero()">Remettre à zero le compteur</button>
+  <button (click)="installTest()">Ajouter 5 %</button>
+  <button (click)="develop()">Ajouter 10 %</button>
+</div>

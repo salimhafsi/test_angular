@@ -1,0 +1,13 @@
+<div class="card">
+  <p-progressBar [value]="data"></p-progressBar>
+  <div
+    [ngClass]="{
+      'zero-pg': data === 0,
+      'first-pg': data === 25,
+      'meduim-pg': data === 50,
+      'heitgh-pg': data === 75
+    }"
+  >
+    Progress Bar : {{ data }} %
+  </div>
+</div>
